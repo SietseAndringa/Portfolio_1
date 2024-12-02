@@ -3,41 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sietse Andringa</title>
+    <title>Sietse Andringa | Front-End Developer</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="description" content="Sietse Andringa" />
+    <meta name="description" content="Sietse Andringa | Front-End Developer" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Navigation -->
 
     <header id="header">
-      <nav class="nav-bar">
-        <a class="home-button" href="#header">
-          <img
-            class="home-icon"
-            width="35"
-            height="auto"
-            src="home-icon.png"
-            alt="home icon"
-          />
-        </a>
+      <nav>
+        <div class="nav-bar">
+          <a class="home-button" href="#header">
+            <img
+              class="home-icon filter-white"
+              width="35"
+              height="auto"
+              src="/icons/home-icon.png"
+              alt="home icon"
+            />
+          </a>
 
-        <ul class="nav-bar-right">
-          <li class="nav-item">
-            <a class="nav-link text--lg" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text--lg" href="#projects-anchor">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text--lg" href="#contact-anchor">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <ul class="nav-bar-right">
+            <li class="nav-item">
+              <a class="nav-link text--lg" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text--lg" href="#projects-anchor">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text--lg" href="#contact-anchor">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </nav>
     </header>
@@ -45,80 +47,78 @@
     <!-- Frontpage -->
 
     <main>
-      <section aria-labelledby="front-page">
-        <div class="front-page-container">
+      <section aria-describedby="front-page-name front-page-title">
+        <div class="front-page-container container-basic-style">
           <img
-            class="thought-icon"
+            class="thought-icon toggle-hidden-widescr filter-white"
             width="150"
             height="150"
-            src="thought.png"
+            src="/icons/idea-icon.png"
             alt="idea-icon"
           />
           <div class="greeting-container">
             <div class="avatar-container">
               <img
-                src="me-bw.jpg"
+                src="/profile_pics/avatar-bw.jpg"
                 alt="profile picture"
                 width="250"
                 height="250"
                 class="avatar"
               />
             </div>
-            <h1 id="front-page" class="title--lg">Sietse Andringa</h1>
-            <h2 class="title">Front-End Developer</h2>
+            <h1 id="front-page-name" class="title--lg">Sietse Andringa</h1>
+            <h2 id="front-page-title" class="title">Front-End Developer</h2>
           </div>
           <img
-            class="devops-icon"
-            src="devops.png"
+            class="devops-icon toggle-hidden-widescr filter-white"
+            src="/icons/devops-icon.png"
             width="150"
             height="150"
             alt="devops-icon"
           />
         </div>
-        <div class="tiles-container">
-          <a class="about-tile-container" href="#about">
-            <div>
-              <h2 class="title">About me</h2>
-            </div>
+        <div class="nav-tiles-container">
+          <a class="nav-tile container-basic-style" href="#about">
+            <h2 class="title">About me</h2>
             <img
-              class="about-icon-big"
-              src="free_icon_2.svg"
+              class="nav-tile-icon filter-orange-1"
+              src="/icons/about-icon.svg"
               alt="about icon"
               width="50"
               height="50"
             />
-            <div class="tile-text-bottom">
-              <p class="center-text no-margin">Who am I...?</p>
+            <div class="toggle-hidden-widescr">
+              <p class="center-text no-margin text">Who am I...?</p>
             </div>
           </a>
-          <a href="#projects-anchor" class="projects-tile-container">
+          <a href="#projects-anchor" class="nav-tile container-basic-style">
             <div>
               <h2 class="title">Projects</h2>
             </div>
             <img
-              class="project-icon-big"
-              src="free_icon_1.svg"
+              class="nav-tile-icon filter-orange-1"
+              src="/icons/notes-icon.svg"
               alt="notes icon"
               width="50"
               height="50"
             />
-            <div class="tile-text-bottom">
-              <p class="center-text no-margin">Have a look at my projects</p>
+            <div class="toggle-hidden-widescr">
+              <p class="center-text no-margin text">Some of my work</p>
             </div>
           </a>
-          <a href="#contact-anchor" class="contact-tile-container">
+          <a href="#contact-anchor" class="nav-tile container-basic-style">
             <div>
               <h2 class="title">Contact</h2>
             </div>
             <img
-              class="contact-icon-big"
-              src="free_icon_3.svg"
+              class="nav-tile-icon filter-orange-1"
+              src="/icons/contact-icon.svg"
               alt="contact icon"
               width="50"
               height="50"
             />
-            <div class="tile-text-bottom">
-              <p class="center-text no-margin">Get in touch!</p>
+            <div class="toggle-hidden-widescr">
+              <p class="center-text no-margin text">Get in touch!</p>
             </div>
           </a>
         </div>
@@ -126,185 +126,191 @@
 
       <!-- About -->
 
-      <div class="about-anchor" id="about">about anchor</div>
+      <div class="section-anchor" id="about">about anchor</div>
 
-      <section aria-labelledby="about-me" class="about-container">
-        <div class="section-header">
-          <h2 id="about-me" class="title--lg">About me</h2>
-          <img
-            class="about-icon"
-            src="free_icon_2.svg"
-            alt="about-icon"
-            width="32"
-            height="32"
-          />
-        </div>
-        <div class="skill-and-text-container">
-          <div class="about-text">
-            <h3 class="title--sm">Hi, i'm Sietse Andringa</h3>
-            <p>
-              I grew up in the north of the Netherlands and ever since I was a
-              kid I have been interested in computers. I enjoy the process of
-              being creative and fixing things. During work and in my spare time
-              I have always loved to work with computers. I spend a lot of time
-              on gaming and surfing the internet, but I also like to do stuff
-              like photo editing, fixing pc and network problems for friends and
-              family, or just fiddling around and be creative. After working as
-              an operator in a factory for 15 years, I decided it was time for a
-              change and point my arrows towards my passion: computers. As a
-              result, I now pursue a career to become a Front-end Developer,
-              which combines my interests in computer technology and creation.
-              Besides computers I also have a passion for traveling, music,
-              movies and cars.
-            </p>
+      <section aria-labelledby="about-me">
+        <div class="about-container">
+          <div class="section-header">
+            <h2 id="about-me" class="title--lg">About me</h2>
+            <img
+              class="section-icon filter-orange-1"
+              src="/icons/about-icon.svg"
+              alt="about-icon"
+              width="32"
+              height="32"
+            />
           </div>
-          <div class="about-skills">
-            <h3 class="center-text title--sm">Skills</h3>
-            <div class="skills-icons-container">
-              <img
-                width="32"
-                height="32"
-                class="html5-badge"
-                src="html-icon.png"
-                alt="html-icon"
-              />
-              <img
-                width="32"
-                height="32"
-                class="css-badge"
-                src="CSS3_logo.svg.png"
-                alt="css-icon"
-              />
-              <img
-                width="32"
-                height="32"
-                class="js-badge"
-                src="js-logo.png"
-                alt="javascript-icon"
-              />
-              <img
-                width="32"
-                height="32"
-                class="react-badge"
-                src="react-icon.png"
-                alt="react-icon"
-              />
+          <div class="skill-and-text-container">
+            <div class="about-text">
+              <h3 class="title--sm">Hi, i'm Sietse Andringa</h3>
+              <p class="text">
+                I grew up in the north of the Netherlands and ever since I was a
+                kid I have been interested in computers. I enjoy the process of
+                being creative and fixing things. During work and in my spare
+                time I have always loved to work with computers. I spend a lot
+                of time on gaming and surfing the internet, but I also like to
+                do stuff like photo editing, fixing pc and network problems for
+                friends and family, or just fiddling around and be creative.
+                After working as an operator in a factory for 15 years, I
+                decided it was time for a change and point my arrows towards my
+                passion: computers. As a result, I now pursue a career to become
+                a Front-end Developer, which combines my interests in computer
+                technology and creation. Besides computers I also have a passion
+                for traveling, music, movies and cars.
+              </p>
             </div>
+            <div class="about-skills">
+              <h3 class="center-text title--sm">Skills:</h3>
+              <div class="skills-icons-container">
+                <img
+                  width="32"
+                  height="32"
+                  class="skill-badge"
+                  src="/icons/html-icon.png"
+                  alt="html-icon"
+                />
+                <img
+                  width="32"
+                  height="32"
+                  class="skill-badge"
+                  src="/icons/css3-icon.png"
+                  alt="css-icon"
+                />
+                <img
+                  width="32"
+                  height="32"
+                  class="skill-badge"
+                  src="/icons/js-icon.png"
+                  alt="javascript-icon"
+                />
+                <img
+                  width="32"
+                  height="32"
+                  class="skill-badge"
+                  src="/icons/react-icon.png"
+                  alt="react-icon"
+                />
+              </div>
 
-            <a
-              class="basic-button-style title--sm"
-              download="CV_Sietse_Andringa"
-              href="CV_Sietse_Andringa.pdf"
-            >
-              Download resume
-            </a>
+              <a
+                class="btn btn-orange title--sm"
+                download="CV_Sietse_Andringa"
+                href="CV_Sietse_Andringa.pdf"
+              >
+                Download resume
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
 
-      <div class="projects-anchor" id="projects-anchor">projects anchor</div>
+      <div class="section-anchor" id="projects-anchor">projects anchor</div>
 
-      <section aria-labelledby="projects" class="projects-container">
-        <div class="section-header">
-          <h2 id="projects" class="title--lg">Projects</h2>
-          <img
-            class="project-icon"
-            src="free_icon_1.svg"
-            alt="pencil"
-            width="32"
-            height="32"
-          />
-        </div>
-        <div class="projects-container-flex">
-          <div class="project-5">
+      <section aria-labelledby="projects">
+        <div class="projects-container">
+          <div class="section-header">
+            <h2 id="projects" class="title--lg">Projects</h2>
             <img
-              class="project-image"
-              src="Supermarket.jpg"
-              alt="screenshot of supermarket project"
-              width="1386"
-              height="1080"
+              class="section-icon filter-orange-1"
+              src="/icons/notes-icon.svg"
+              alt="pencil"
+              width="32"
+              height="32"
             />
-            <div class="project-description">
-              <h3 class="title">Online Supermarket</h3>
-              <p>A small online supermarket for your groceries.</p>
-              <a class="basic-button-style title--sm" href="Supermarket.html">
-                Read more...
-              </a>
-            </div>
           </div>
-          <div class="project-4">
-            <img
-              class="project-image"
-              src="Nutrition.jpg"
-              alt="screenshot of nutrient log project"
-              width="1386"
-              height="1080"
-            />
-            <div class="project-description">
-              <h3 class="title">Nutrition Log</h3>
-              <p>Keep track of your macronutrients with this food log.</p>
-              <a class="basic-button-style title--sm" href="NutritionLog.html">
-                Read more...
-              </a>
+          <div class="cards-container">
+            <div class="project-card">
+              <div style="display: contents">
+                <div
+                  class="card-image"
+                  style="background-image: url(/screenshots/Supermarket_01.jpg)"
+                ></div>
+                <div class="card-details">
+                  <h3 class="title">Online Supermarket</h3>
+
+                  <p class="text">
+                    A small online supermarket for your groceries.
+                  </p>
+                </div>
+              </div>
+              <a href="Supermarket.html">View Supermarket project</a>
             </div>
-          </div>
-          <div class="project-3">
-            <img
-              class="project-image"
-              src="Recipe.JPG"
-              alt="screenshot of Recipe Checker project"
-              width="1386"
-              height="1080"
-            />
-            <div class="project-description">
-              <h3 class="title">Recipe Checker</h3>
-              <p>
-                A tasty website with some awesome recipes for food and drinks.
-              </p>
-              <a class="basic-button-style title--sm" href="RecipeChecker.html">
-                Read more...
-              </a>
+
+            <div class="project-card">
+              <div style="display: contents">
+                <div
+                  class="card-image"
+                  style="
+                    background-image: url(/screenshots/Nutrition_log_01.jpg);
+                  "
+                ></div>
+                <div class="card-details">
+                  <h3 class="title">Nutrition Log</h3>
+
+                  <p class="text">
+                    Keep track of your macronutrients with this food log.
+                  </p>
+                </div>
+              </div>
+              <a href="NutritionLog.html">View Nutrition Log project</a>
             </div>
-          </div>
-          <div class="project-2">
-            <img
-              class="project-image"
-              src="ToDo.JPG"
-              alt="screenshot of Todo List project"
-              width="1386"
-              height="1080"
-            />
-            <div class="project-description">
-              <h3 class="title">Todo List</h3>
-              <p>
-                There are always plenty of things to do, but it's also easy to
-                forget something. With this app you can make a basic todo list.
-              </p>
-              <a class="basic-button-style title--sm" href="TodoList.html">
-                Read more...
-              </a>
+
+            <div class="project-card">
+              <div style="display: contents">
+                <div
+                  class="card-image"
+                  style="background-image: url(/screenshots/Recipe.JPG)"
+                ></div>
+                <div class="card-details">
+                  <h3 class="title">Recipe Checker</h3>
+
+                  <p class="text">
+                    A tasty website with some awesome recipes for food and
+                    drinks.
+                  </p>
+                </div>
+              </div>
+              <a href="coming_soon.html">View Recipe Checker project</a>
             </div>
-          </div>
-          <div class="project-1">
-            <img
-              class="project-image"
-              src="FilmFinder.JPG"
-              alt="screenshot of film finder project"
-              width="1386"
-              height="1080"
-            />
-            <div class="project-description">
-              <h3 class="title">Coen Brothers Film Finder</h3>
-              <p>
-                Who doesn't like a good movie? I certainly do! The Coen Brothers
-                are one of my favorite movie director duo's, so I created a
-                website to list all of their movies.
-              </p>
-              <a class="basic-button-style title--sm" href="FilmFinder.html">
-                Read more...
-              </a>
+
+            <div class="project-card">
+              <div style="display: contents">
+                <div
+                  class="card-image"
+                  style="background-image: url(/screenshots/ToDo.JPG)"
+                ></div>
+                <div class="card-details">
+                  <h3 class="title">Todo List</h3>
+
+                  <p class="text">
+                    There are always plenty of things to do, but it's also easy
+                    to forget something. With this app you can make a basic todo
+                    list.
+                  </p>
+                </div>
+              </div>
+              <a href="coming_soon.html">View Todo List project</a>
+            </div>
+
+            <div class="project-card">
+              <div style="display: contents">
+                <div
+                  class="card-image"
+                  style="background-image: url(/screenshots/FilmFinder.JPG)"
+                ></div>
+                <div class="card-details">
+                  <h3 class="title">Coen Brothers Film Finder</h3>
+
+                  <p class="text">
+                    Who doesn't like a good movie? I certainly do! The Coen
+                    Brothers are one of my favorite movie director duo's, so I
+                    created a website to list all of their movies.
+                  </p>
+                </div>
+              </div>
+              <a href="coming_soon.html">View Film Finder project</a>
             </div>
           </div>
         </div>
@@ -312,45 +318,53 @@
 
       <!-- Contact -->
 
-      <div class="contact-anchor" id="contact-anchor">contact anchor</div>
+      <div class="section-anchor" id="contact-anchor">contact anchor</div>
 
-      <section aria-labelledby="contact" class="contact-container">
-        <div class="section-header">
-          <h2 id="contact" class="title--lg">Contact</h2>
-          <img
-            class="contact-icon"
-            src="free_icon_3.svg"
-            alt="contact-icon"
-            width="32"
-            height="32"
-          />
-        </div>
-        <div class="contact-icons-container margin-2rem-tb">
-          <a href="mailto:andringa.sietse@gmail.com">
+      <section aria-labelledby="contact">
+        <div class="contact-container">
+          <div class="section-header">
+            <h2 id="contact" class="title--lg">Contact</h2>
             <img
-              class="mail-icon"
-              src="email-svgrepo-com.svg"
-              alt="E-mail icon"
-              width="40"
-              height="40"
+              class="section-icon filter-orange-1"
+              src="/icons/contact-icon.svg"
+              alt="contact icon"
+              width="32"
+              height="32"
             />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sietse-andringa/"
-            target="_blank"
-          >
-            <img
-              class="linked-in-icon"
-              src="linkedin-svgrepo-com.svg"
-              alt="Linked-in icon"
-              width="40"
-              height="40"
-            />
-          </a>
+          </div>
+          <div class="contact-buttons-container">
+            <div class="contact-buttons-wrapper">
+              <a href="mailto:andringa.sietse@gmail.com">
+                <img
+                  class="mail-icon filter-white"
+                  src="/icons/email-icon.svg"
+                  alt="E-mail icon"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <p class="text">andringa.sietse@gmail.com</p>
+            </div>
+            <div class="contact-buttons-wrapper">
+              <a
+                href="https://www.linkedin.com/in/sietse-andringa/"
+                target="_blank"
+              >
+                <img
+                  class="linked-in-icon filter-white"
+                  src="/icons/linked_in-icon.svg"
+                  alt="Linked-in icon"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <p class="text">linkedin.com/in/sietse-andringa</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="center-text">
       <p>Copyright Sietse Andringa 2024</p>
     </footer>
   </body>

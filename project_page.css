@@ -1,0 +1,102 @@
+.body-project {
+  height: 100vh;
+}
+
+.project-page-main {
+  padding-top: 0;
+}
+
+.project-page-header {
+  position: relative;
+}
+
+.project-page-header h1 {
+  position: absolute;
+  right: 1rem;
+}
+
+.project-page-header nav {
+  width: 100%;
+}
+
+.explanation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-page-explanation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screenshots-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-page-image {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Skills */
+
+.skills-parent-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 525px) {
+  .project-page-header h1 {
+    right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .explanation-container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .skills-parent-container {
+    width: 50%;
+  }
+
+  .project-page-explanation {
+    width: 50%;
+  }
+
+  .project-page-image {
+    width: 48%;
+    min-width: 550px;
+  }
+}

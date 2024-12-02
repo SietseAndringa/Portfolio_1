@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #1f2b3b;
+  --primary-color: #2b3c52;
+  --accent-color: orange;
+  --text-color: white;
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+main {
+  padding-top: 70px;
+}
+
+p {
+  margin: 1rem 0 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.padding-top {
+  padding-top: 1rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* --- buttons --- */
+
+.btn {
+  display: block;
+  border-radius: 15px;
+  width: fit-content;
+  height: auto;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-orange {
+  border: none;
+  background-color: var(--accent-color);
+  text-shadow: 1px 1px var(--background-color);
+}
+
+/* Screen reader stuff */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

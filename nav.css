@@ -1,0 +1,124 @@
+/* Nav bar top */
+
+li {
+  list-style: none;
+}
+
+li a {
+  transition: color 300ms;
+  &:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding-right: 2rem;
+  max-width: 1366px;
+  background-color: var(--background-color);
+  min-height: 70px;
+  z-index: 2;
+}
+
+.nav-bar-right {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: fixed;
+  right: 0;
+  top: -160px;
+  width: 100%;
+  min-height: 160px;
+  transition: 0.5s;
+}
+
+.nav-bar-right.active {
+  translate: 0px 160px;
+}
+
+.home-button {
+  z-index: 3;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Nav Tiles */
+
+.nav-tiles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-tile {
+  border: 2px solid var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  transition: border-color 300ms;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar-right {
+    flex-direction: row;
+    justify-content: flex-end;
+    position: initial;
+    min-height: auto;
+  }
+
+  .nav-tiles-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-tile {
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+  }
+}

@@ -7,68 +7,109 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-project">
-    <header class="project-page-header">
-      <h1>Online Supermarket</h1>
+    <header class="project-page-header section-header padding-top">
+      <h1 class="title--lg">Online Supermarket</h1>
+      <nav>
+        <div class="buttons-container">
+          <a class="btn title--sm" href="index.html#projects-anchor"> Back </a>
+        </div>
+      </nav>
     </header>
-    <main class="project-page-container">
-      <div class="project-page-explanation">
-        <p>
-          This is an online supermarket where you can order groceries. You can
-          view different products and add them to your shopping cart. You can
-          then make your payment using the integrated payment system Stripe
-          Checkout. This was the final assignment of the React course that I
-          followed. It is therefore not a real webshop and is only intended for
-          demonstration.
-        </p>
-        <p>
-          This site is built with ReactJS and uses technologies such as JSX,
-          Hooks, Context, React Router, APIs and library integration (Stripe
-          Checkout)
-        </p>
-        <p>
-          During the course I learned all the necessary concepts step by step,
-          which I later applied in the final assignment. It was a fun process to
-          integrate all the components and to see the webshop slowly taking
-          shape. Some parts were quite difficult to understand, such as JSX,
-          props, state and context.
-        </p>
+    <main class="project-page-main">
+      <div class="explanation-container">
+        <div class="project-page-explanation">
+          <p class="text txt-margin--sm">
+            This is an online supermarket where you can order groceries. You can
+            view different products and add them to your shopping cart. You can
+            then make your payment using the integrated payment system Stripe
+            Checkout. This was the final assignment of the React course that I
+            followed. It is therefore not a real webshop and is only intended
+            for demonstration.
+          </p>
+          <p class="text txt-margin--sm">
+            This site is built with ReactJS and uses technologies such as JSX,
+            Hooks, Context, React Router, APIs and library integration (Stripe
+            Checkout)
+          </p>
+          <p class="text txt-margin--sm">
+            During the course I learned all the necessary concepts step by step,
+            which I later applied in the final assignment. It was a fun process
+            to integrate all the components and to see the webshop slowly taking
+            shape. Some parts were quite difficult to understand, such as JSX,
+            props, state and context.
+          </p>
+        </div>
+        <div class="skills-parent-container">
+          <div>
+            <p class="text">Programming languages used:</p>
+            <div class="skills-container">
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/html-icon.png"
+                  alt="html-icon"
+                />
+                <p class="no-margin text--sm">HTML-5</p>
+              </div>
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/css3-icon.png"
+                  alt="css-icon"
+                />
+                <p class="no-margin text--sm">CSS-3</p>
+              </div>
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/js-icon.png"
+                  alt="javascript-icon"
+                />
+                <p class="no-margin text--sm">Javascript</p>
+              </div>
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/react-icon.png"
+                  alt="react-icon"
+                />
+                <p class="no-margin text--sm">ReactJS</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="btn btn-orange title--sm"
+            href="https://sietses-groceries.netlify.app"
+          >
+            View live version
+          </a>
+        </div>
       </div>
-
-      <div class="project-page-image">
+      <div class="screenshots-container">
         <img
-          class="project-image"
-          src="Supermarket.jpg"
+          class="project-page-image"
+          src="/screenshots/Supermarket_01.jpg"
           alt="screenshot of supermarket project"
-          width="1386"
-          height="1080"
+          width="1280"
+          height="760"
+        />
+        <img
+          class="project-page-image"
+          src="/screenshots/Supermarket_02.jpg"
+          alt="screenshot of supermarket project"
+          width="1280"
+          height="760"
+        />
+        <img
+          class="project-page-image"
+          src="/screenshots/Supermarket_03.jpg"
+          alt="screenshot of supermarket project"
+          width="1280"
+          height="760"
         />
       </div>
-      <p class="skills-title">Programming languages used:</p>
-      <div class="skills-container">
-        <div>
-          <img class="html5-badge" src="html-icon.png" alt="html-icon" />
-          <p>HTML</p>
-        </div>
-        <div>
-          <img class="css-badge" src="CSS3_logo.svg.png" alt="css-icon" />
-          <p>CSS</p>
-        </div>
-        <div>
-          <img class="js-badge" src="js-logo.png" alt="javascript-icon" />
-          <p>Javascript</p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <a class="back-button" href="index.html#projects-anchor"> Back </a>
-        <a
-          class="basic-button-style"
-          href="https://sietses-groceries.netlify.app"
-        >
-          View live version
-        </a>
-      </div>
     </main>
-    <footer>
+    <footer class="center-text">
       <p>Copyright Sietse Andringa 2024</p>
     </footer>
   </body>

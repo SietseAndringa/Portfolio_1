@@ -7,67 +7,93 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-project">
-    <header class="project-page-header">
-      <h1>Nutrition Log</h1>
+    <header class="project-page-header section-header padding-top">
+      <h1 class="title--lg">Nutrition Log</h1>
+      <nav>
+        <div class="buttons-container">
+          <a class="btn title--sm" href="index.html#projects-anchor"> Back </a>
+        </div>
+      </nav>
     </header>
-    <main class="project-page-container">
-      <div class="project-page-explanation">
-        <p>
-          This app allows you to track your macronutrients. The total amount per
-          nutrient (carbs, protein and fat) is logged and shown in a graph. The
-          total amount of calories is also calculated and shown.
-        </p>
-        <p>
-          I built this app during a Javascript course and it uses various ES2015
-          techniques, such as DOM manipulation, classes, promises, fetching,
-          modules, etc. The focus of this project was therefore mainly on the
-          functional part and less on the content and styling.
-        </p>
-        <p>
-          During the course I learned all the fundamental aspects of Javascript
-          and used them to build this app. Building the app step by step was a
-          very educational process and it was satisfying to see it becoming more
-          and more functional and complete. Some concepts were quite difficult
-          to understand, such as classes, asynchronous programming and handling
-          (nested) arrays and objects.
-        </p>
+    <main class="project-page-main">
+      <div class="explanation-container">
+        <div class="project-page-explanation">
+          <p class="text txt-margin--sm">
+            This app allows you to track your macronutrients. The total amount
+            per nutrient (carbs, protein and fat) is logged and shown in a
+            graph. The total amount of calories is also calculated and shown.
+          </p>
+          <p class="text txt-margin--sm">
+            I built this app during a Javascript course and it uses various
+            ES2015 techniques, such as DOM manipulation, classes, promises,
+            fetching, modules, etc. The focus of this project was therefore
+            mainly on the functional part and less on the content and styling.
+          </p>
+          <p class="text txt-margin--sm">
+            During the course I learned all the fundamental aspects of
+            Javascript and used them to build this app. Building the app step by
+            step was a very educational process and it was satisfying to see it
+            becoming more and more functional and complete. Some concepts were
+            quite difficult to understand, such as classes, asynchronous
+            programming and handling (nested) arrays and objects.
+          </p>
+        </div>
+        <div class="skills-parent-container">
+          <div>
+            <p class="text">Programming languages used:</p>
+            <div class="skills-container">
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/html-icon.png"
+                  alt="html-icon"
+                />
+                <p class="no-margin text--sm">HTML-5</p>
+              </div>
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/css3-icon.png"
+                  alt="css-icon"
+                />
+                <p class="no-margin text--sm">CSS-3</p>
+              </div>
+              <div>
+                <img
+                  class="skill-badge"
+                  src="/icons/js-icon.png"
+                  alt="javascript-icon"
+                />
+                <p class="no-margin text--sm">Javascript</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="btn btn-orange title--sm"
+            href="https://my-nutrition-app.netlify.app"
+          >
+            View live version
+          </a>
+        </div>
       </div>
-
-      <div class="project-page-image">
+      <div class="screenshots-container">
         <img
-          class="project-image"
-          src="Nutrition.jpg"
-          alt="screenshot of Nutrition Log project"
-          width="1386"
-          height="1080"
+          class="project-page-image"
+          src="/screenshots/Nutrition_log_02.jpg"
+          alt="screenshot of Nutrition log project"
+          width="1280"
+          height="850"
+        />
+        <img
+          class="project-page-image"
+          src="/screenshots/Nutrition_log_03.png"
+          alt="screenshot of Nutrition log project"
+          width="1280"
+          height="850"
         />
       </div>
-      <p class="skills-title">Programming languages used:</p>
-      <div class="skills-container">
-        <div>
-          <img class="html5-badge" src="html-icon.png" alt="html-icon" />
-          <p>HTML</p>
-        </div>
-        <div>
-          <img class="css-badge" src="CSS3_logo.svg.png" alt="css-icon" />
-          <p>CSS</p>
-        </div>
-        <div>
-          <img class="js-badge" src="js-logo.png" alt="javascript-icon" />
-          <p>Javascript</p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <a class="back-button" href="index.html#projects-anchor"> Back </a>
-        <a
-          class="basic-button-style"
-          href="https://my-nutrition-app.netlify.app"
-        >
-          View live version
-        </a>
-      </div>
     </main>
-    <footer>
+    <footer class="center-text">
       <p>Copyright Sietse Andringa 2024</p>
     </footer>
   </body>

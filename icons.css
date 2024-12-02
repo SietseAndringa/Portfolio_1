@@ -1,0 +1,79 @@
+.toggle-hidden-widescr {
+  display: none;
+}
+
+/* Filters */
+
+.filter-orange-1 {
+  filter: invert(55%) sepia(99%) saturate(800%) hue-rotate(0deg)
+    brightness(130%) contrast(105%);
+}
+
+.filter-orange-2 {
+  filter: invert(45%) sepia(99%) saturate(800%) hue-rotate(0deg)
+    brightness(130%) contrast(105%);
+}
+
+.filter-white {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* Icons */
+
+.section-icon {
+  height: 32px;
+  width: auto;
+}
+
+.nav-tile-icon,
+.mail-icon {
+  height: 50px;
+  width: auto;
+}
+
+.linked-in-icon {
+  height: 40px;
+  width: auto;
+}
+
+.devops-icon,
+.thought-icon {
+  width: 150px;
+  height: auto;
+}
+
+.home-icon {
+  width: 35px;
+  transition: filter 200ms;
+  &:hover {
+    filter: invert(45%) sepia(99%) saturate(800%) hue-rotate(0deg)
+      brightness(130%) contrast(105%);
+  }
+}
+
+.skill-badge {
+  width: 3rem;
+  height: 3rem;
+  &:hover {
+    animation: slide-top 0.2s cubic-bezier(0.61, 1, 0.88, 1) 2 alternate;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-tile-icon {
+    height: 100px;
+  }
+  .toggle-hidden-widescr {
+    display: block;
+  }
+}
