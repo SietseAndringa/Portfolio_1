@@ -3,9 +3,10 @@ main section {
   min-height: 100dvh;
 }
 
-main section:last-child {
-  min-height: 80vh;
-  min-height: 80dvh;
+#about-me,
+#projects,
+#contact {
+  scroll-margin-top: 100px;
 }
 
 footer {
@@ -15,12 +16,6 @@ footer {
 .container-basic-style {
   border-radius: 15px;
   background-color: var(--primary-color);
-}
-
-.section-anchor {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  visibility: hidden;
 }
 
 .section-header {
@@ -40,11 +35,9 @@ footer {
     background-color: var(--background-color); */
 }
 
-@media (min-width: 768px) {
-  .section-anchor,
-  .projects-anchor,
-  .contact-anchor {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+.border-transition {
+  transition: border-color 300ms;
+  &:hover {
+    border-color: var(--accent-color);
   }
 }
