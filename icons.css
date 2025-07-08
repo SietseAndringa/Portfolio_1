@@ -26,15 +26,9 @@
   width: auto;
 }
 
-.nav-tile-icon,
-.mail-icon {
-  height: 50px;
-  width: auto;
-}
-
-.linked-in-icon {
-  height: 40px;
-  width: auto;
+.nav-tile-icon {
+  width: 50px;
+  height: auto;
 }
 
 .devops-icon,
@@ -52,12 +46,29 @@
   }
 }
 
-.skill-badge {
-  width: 3rem;
-  height: 3rem;
+.skill-icon {
+  height: 40px;
+  width: auto;
   &:hover {
     animation: slide-top 0.2s cubic-bezier(0.61, 1, 0.88, 1) 2 alternate;
   }
+}
+
+.resume-icon {
+  width: auto;
+  height: 50px;
+}
+
+.mail-icon {
+  height: 50px;
+  width: auto;
+}
+
+.linkedIn-icon {
+  height: 40px;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 @keyframes slide-top {
@@ -71,7 +82,11 @@
 
 @media (min-width: 768px) {
   .nav-tile-icon {
-    height: 100px;
+    width: 100px;
+  }
+
+  .section-icon {
+    height: 40px;
   }
   .toggle-hidden-widescr {
     display: block;

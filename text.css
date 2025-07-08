@@ -25,6 +25,11 @@ a {
   font-weight: bold;
 }
 
+.title--xs {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 .text--lg {
   font-size: 1.25rem;
 }
@@ -35,6 +40,10 @@ a {
 
 .text--sm {
   font-size: 0.8rem;
+}
+
+.text-orange {
+  color: var(--accent-color);
 }
 
 .underline {

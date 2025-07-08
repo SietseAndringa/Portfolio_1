@@ -40,19 +40,23 @@ li a {
   width: 100%;
   min-height: 160px;
   transition: 0.5s;
+  padding-right: 5px;
 }
 
 .nav-bar-right.active {
   translate: 0px 160px;
+  border-bottom: 3px solid orange;
 }
 
 .home-button {
   z-index: 3;
+  margin-left: 5px;
 }
 
 .hamburger {
   display: block;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .bar {
@@ -90,9 +94,17 @@ li a {
   border: 2px solid var(--primary-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 80px;
+}
+
+.nav-tile h2 {
+  margin: 1rem;
+}
+
+.nav-tile p {
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -114,7 +126,9 @@ li a {
 
   .nav-tile {
     flex-direction: column;
+    justify-content: space-between;
     height: 250px;
-    width: 300px;
+    width: 100%;
+    /* max-width: 400px; */
   }
 }
